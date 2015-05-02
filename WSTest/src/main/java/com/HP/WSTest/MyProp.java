@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement (name="myPropBean")
+@XmlRootElement (name="myPropListBean")
 public class MyProp {
 	public List<MyPropType> myPropList = new ArrayList<MyPropType>();
 	
