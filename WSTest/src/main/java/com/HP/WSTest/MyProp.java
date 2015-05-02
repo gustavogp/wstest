@@ -48,19 +48,5 @@ public class MyProp {
 		this.count = count;
 	}
 	
-/*	@Override
-	public String toString() {
-		try {
-			JsonObject jO = Json.createObjectBuilder()
-					.add("javaVendor", getJavaVendor())
-					.add("osName", getOsName())
-					.add("userName", getUserName())
-					.add("userCountry", getUserCountry())
-					.add("count", getCount())
-					.build();
-			return jO.toString();
-		} catch (JsonException e) {
-			return null;
-		}
-	} */
+
 }

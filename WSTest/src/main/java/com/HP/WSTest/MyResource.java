@@ -17,7 +17,7 @@ public class MyResource {
      * type.
      * @return String that will be send back as a response of type "text/plain".
      */
-	   @GET 
+	@GET 
     @Produces("text/plain")
     @Path("/full")
     public String getIt() {
@@ -43,8 +43,6 @@ public class MyResource {
     	myPropMap.put("userName", prop.getProperty("user.name"));
     	myPropMap.put("userCountry", prop.getProperty("user.country"));
     	
-    	
-
     		MyProp myPropBean = new MyProp();
         	myPropBean.setJavaVendor(myPropMap.getProperty("javaVendor"));
         	myPropBean.setOsName(myPropMap.getProperty("osName"));
