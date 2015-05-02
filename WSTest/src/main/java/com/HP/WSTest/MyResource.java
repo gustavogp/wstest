@@ -43,14 +43,18 @@ public class MyResource {
     	myPropMap.put("userName", prop.getProperty("user.name"));
     	myPropMap.put("userCountry", prop.getProperty("user.country"));
     	
-    		MyProp myPropBean = new MyProp();
-        	myPropBean.setJavaVendor(myPropMap.getProperty("javaVendor"));
-        	myPropBean.setOsName(myPropMap.getProperty("osName"));
-        	myPropBean.setUserName(myPropMap.getProperty("userName"));
-        	myPropBean.setUserCountry(myPropMap.getProperty("userCountry"));
-        	myPropBean.setCount(1);
+    	MyProp myPropBean = new MyProp();
+    	
+    	for(int i = 1 ; i < 5 ; i++) {
+    		MyPropType myPropType = new MyPropType();
+    		myPropType.setJavaVendor(myPropMap.getProperty("javaVendor"));
+    		myPropType.setOsName(myPropMap.getProperty("osName"));
+    		myPropType.setUserName(myPropMap.getProperty("userName"));
+    		myPropType.setUserCountry(myPropMap.getProperty("userCountry"));
+    		myPropType.setCount(i);
         	
-
+    		myPropBean.myPropList.add(myPropType);
+    	}
     	
     	return myPropBean;
     } 
